@@ -10,6 +10,9 @@
             }
         }
     }
+    .consultation {
+        padding: 80px 10px;
+    }
     
 }
 @media(max-width: 767px) {
@@ -27,6 +30,41 @@
         }
         &__item {
             width: 100%;
+        }
+    }
+    .consultation {
+        padding: 50px 10px;
+    }
+}
+@media(max-width: 575px) {
+    .header {
+        &__phone{
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+    .promo {
+        padding: 20px;
+        &__wrapper {
+            h1 {
+                font-size: 22px;
+            }
+            h2 {
+                font-size: 15px;
+            }
+        }
+        &__items {
+            width: 100%;
+        }
+    }
+    .title__white {
+        font-size: 31px;
+        line-height: 35px;
+    }
+    .consultation {
+        padding: 50px 10px;
+        &__subtitle {
+            font-size: 15px;
         }
     }
 }

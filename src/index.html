@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Pulse Project</title>
 </head>
 <body>
-    <div class="promo">
+    <section class="promo">
         <div class="container">
             <header class="header">
                 <div class="header__logo">
@@ -49,10 +50,10 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="benefits">
+    </section>
+    <section class="benefits">
         <div class="container">
-            <div class="benefits__header">НАШИ ПРЕИМУЩЕСТВА</div>
+            <div class="title">НАШИ ПРЕИМУЩЕСТВА</div>
             <div class="benefits__wrapper">
                 <div class="benefits__item">
                     <div class="benefits__img">
@@ -77,6 +78,39 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="consultation">
+        <div class="container">
+            <h2 class="title title__white">Получите бесплатную консультацию<br> по подбору пульсометра </h2>
+            <h3 class="consultation__subtitle">Просто заполните форму заявки<br> и мы перезвоним вам в течении 10 минут</h3>
+            <form action="" class="form__order">
+                <input required name="name" placeholder="Ваше имя" type="text">
+                <input required name="tel" placeholder="Ваш телефон" type="number">
+                <input required name="email" placeholder="Ваш E-mail" type="email">
+                <button class="button button__order">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel__inner">
+                <div class="carousel__item">
+                    <img src="img/slaide_1.png" alt="slide">
+                </div>
+                <div class="carousel__item">
+                    <img src="img/slaide_2.png" alt="slide">
+                </div>
+                <div class="carousel__item">
+                    <img src="img/slaide_3.png" alt="slide">
+                </div>
+            </div>
+            <button type="button" class="prev"><img src="icons/left.png" alt="prev"></button>
+            <button type="button" class="next"><img src="icons/right.png" alt="right"></button>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
