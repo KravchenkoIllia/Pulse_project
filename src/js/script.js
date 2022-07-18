@@ -61,3 +61,47 @@ $('.button_mini').each(function(i) {
     $('.overlay, #order').fadeIn('slow');
   })
 });
+
+// $('#consultation form').validate({
+//  rules: {
+//     name: "required",
+//     tel: "required",
+//     email: {
+//       required: true,
+//       email: true
+//     }
+//   },
+//   messages: {
+//     name: "Please specify your name",
+//     tel: "Please specify your number",
+//     email: {
+//       required: "We need your email address to contact you",
+//       email: "Your email address must be in the format of name@domain.com"
+//     }
+//   }
+// });
+
+function validateForms (item) {
+  $(item).validate({
+    rules: {
+       name: "required",
+       tel: "required",
+       email: {
+         required: true,
+         email: true
+       }
+     },
+     messages: {
+       name: "Please specify your name",
+       tel: "Please specify your number",
+       email: {
+         required: "We need your email address to contact you",
+         email: "Your email address must be in the format of name@domain.com"
+       }
+     }
+   });
+}
+
+validateForms('#consultation form');
+validateForms('#order form');
+validateForms('#consultation_form form');

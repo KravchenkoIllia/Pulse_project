@@ -30,4 +30,12 @@
     &_mt25 {
         margin-top: 25px;
     }
+    .error {
+        color: $main-color;
+        font-size: 12px;
+        border: 1px solid red;
+    }
+    label.error {
+        border: none;
+    }
 }
